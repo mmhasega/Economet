@@ -10,25 +10,37 @@ link-citations: yes
 description: "Trata-se de notas de aulas da disciplina de Econometria do Curso de Economia do Departamento de Economia da Universidade Federal do Paraná."
 ---
 
-# Prerequisites
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
-
-The **bookdown** package can be installed from CRAN or Github:
-
-```{r eval=FALSE}
-install.packages("bookdown")
-# or the development version
-# devtools::install_github("rstudio/bookdown")
+```{r setup, include=FALSE}
+library(formatR)
+library(knitr)
+library(ggplot2)
+library(tinytex)
+library(bibtex)
+knitr::opts_chunk$set(
+	echo = TRUE,
+	error = FALSE,
+	fig.height = 4,
+	fig.width = 4,
+	message = FALSE,
+	warning = FALSE,
+	cache = FALSE,
+	tidy = TRUE,
+	tidy.opts = list(width.cutoff = 50)
+)
+options(OutDec = ",")
 ```
 
-Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`.
+# Licença {-}
 
-To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.org/tinytex/>.
+Como está descrito no repositório, os poucos códigos originais desenvolvidos ao longo do texto estão sob a licença **GNU GPLv3** .
 
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```
+O texto e as artes gráficas elaboradas de forma original estão sob licença **Creative Commons BY-NC-SA 4.0**.
+
+# Sobre o material {-}
+
+A situação especial causada pela pandemia da COVID-19 forçou a muitos professores criarem materiais para facilitar aulas remotas das suas disciplinas. A disciplina SE308 Econometria da UFPR não poderia ser diferente. Então, o objetivo deste material é de suprir a falta das bibliografias básicas na sua versão digital com a disponibilização de forma digital e gratuita o que seria o material das notas das aulas da disciplina de Econometria. Não é o ideal, mas a ideia é melhorar o material com tempo.
+
+# Sobre o Autor {-}
+
+Professor do Departamento de Economia da Universidade Federal do Paraná. Engenheiro Agrônomo pela UNESP/Jaboticabal, Mestrado em Economia Agrária pela ESALQ/USP e Doutorado em Economia Aplicada pela ESALQ/USP, é um dos professores responsáveis pelas disciplinas de SE305 Estatística Econômica e Introdução à Econometria e SE308 Econometria ambas do curso de Economia da Universidade Federal do Paraná (UFPR). 

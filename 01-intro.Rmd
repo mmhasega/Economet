@@ -1,21 +1,8 @@
-# Introdução {#intro}
+# Propriedades de amostra finita do MQO {#amostrafinita}
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+No capitulo \@ref(amostrafinita) apresena as prorpriedades de pequena amostra ou amostra finita do estimador de mínimos quadrados ordinários. Como a maior parte deste material, o primeiro o capítulo \@ref(amostrafinita) tem como base @Hayashi2000.
 
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+## O modelo regressão linear clássico
 
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
-```
+O modelo de regeressão linear clássico, as variáveis, chamadas de variável dependente ou regressanda é relacionada com outras várias variáveis denominadas regressoras ou variáveis explicativas. Suponha que se observe $n$ valores para estas variáveis. Seja $y_i$ a $i$-ésima observação da variávei dependente em questãoe seja $(x_{i1},x_{i2},x_{i3}, \ldots, x_{iK})$ as $i$-ésimas observações dos $K$ regressores. A **amostra** ou **dado** é a um coleção destas $n$ observações.
 
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
-
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
-
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].

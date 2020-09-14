@@ -1,6 +1,13 @@
 output_dir: "docs"
 book_filename: "Economet"
 delete_merged_file: true
-language:
+llanguage: 
+  label:
+    fig: "FIGURA "
+    tab: "TABELA "
+
   ui:
-    chapter_name: "Chapter "
+    edit: Edit
+    chapter_name: "CAPÍTULO "
+    appendix_name: "APÊNDICE "
+    reference_name: "REFERÊNCIAS "
